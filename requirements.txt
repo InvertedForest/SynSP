@@ -1,0 +1,20 @@
+# python=3.10.8
+torch==1.13.1
+torchvision==0.14.1
+scipy==1.13.1
+einops==0.8.0
+matplotlib==3.9.1
+numpy==1.23.0
+open3d==0.18.0
+Pillow==10.4.0
+progress==1.6
+chumpy==0.70
+pyrender==0.1.45
+PyYAML==6.0.1
+smplx==0.1.28
+thop==0.1.1.post2209072238
+torch_dct==0.1.6
+tqdm==4.64.1
+transforms3d==0.4.2
+trimesh==4.4.1
+yacs==0.1.8
