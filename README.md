@@ -1,6 +1,8 @@
  # SynSP: Synergy of Smoothness and Precision in Pose Sequences Refinement (CVPR 2024)
 
-This repo is the official implementation of "**SynSP: Synergy of Smoothness and Precision in Pose Sequences Refinement**". The code is based on the [SmoothNet](https://github.com/cure-lab/SmoothNet).
+This repo is the official implementation of "**SynSP: Synergy of Smoothness and Precision in Pose Sequences Refinement**". The code is based on the [SmoothNet](https://github.com/cure-lab/SmoothNet). 
+
+**Under Construction...**
 
 [Paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_SynSP_Synergy_of_Smoothness_and_Precision_in_Pose_Sequences_Refinement_CVPR_2024_paper.pdf)
 
