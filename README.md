@@ -48,16 +48,8 @@ Run the commands below to start training:
 python train_smoothnet.py --cfg [config file] --dataset_name [dataset name] --estimator [backbone estimator you use] --body_representation [smpl/3D/2D] --slide_window_size [slide window size]
 ```
 
-For example, you can train on 3D representation of Human3.6M using backbone estimator FCN with silde window size 8 by:
-
 ```shell script
-python train_smoothnet.py --cfg configs/h36m_fcn_3D.yaml --dataset_name h36m --estimator fcn --body_representation 3D --slide_window_size 8
-```
-
-You can easily train on multiple datasets using "," to split multiple datasets / estimator / body representation. For example, you can train on `AIST++` - `VIBE` - `3D` and `3DPW` - `SPIN` - `3D` with silde window size 8 by:
-
-```shell script
-python train_smoothnet.py --cfg configs/h36m_fcn_3D.yaml --dataset_name aist,pw3d --estimator vibe,spin --body_representation 3D,3D  --slide_window_size 8
+python train_smoothnet.py --cfg configs/aist_vibe_3D.yaml --dataset_name aist --estimator vibe --body_representation 3D --slide_window_size 8
 ```
 
 Note that the training and testing datasets should be downloaded and prepared before training.
