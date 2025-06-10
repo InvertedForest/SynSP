@@ -70,10 +70,8 @@ Run the commands below to start evaluation:
 python eval_smoothnet.py --cfg [config file] --checkpoint [pretrained checkpoint] --dataset_name [dataset name] --estimator [backbone estimator you use] --body_representation [smpl/3D/2D] --slide_window_size [slide window size] --tradition [savgol/oneeuro/gaus1d]
 ```
 
-For example, you can evaluate `MPI-INF-3DHP` - `TCMR` - `3D` and `MPI-INF-3DHP` - `VIBE` - `3D` using SmoothNet trained on `3DPW` - `SPIN` - `3D` with silde window size 8, and compare the results with traditional filters `oneeuro` by:
-
 ```shell script
-python eval_smoothnet.py --cfg configs/pw3d_spin_3D.yaml --checkpoint data/checkpoints/pw3d_spin_3D/checkpoints_8.pth.tar --dataset_name mpiinf3dhp,mpiinf3dhp --estimator tcmr,vibe --body_representation 3D,3D --slide_window_size 8 --tradition oneeuro
+python eval_smoothnet.py --cfg configs/aist_vibe_3D.yaml --checkpoint /path/to/aist_vibe_3D.pth.tar --dataset_name aist --estimator vibe --body_representation 3D --slide_window_size 8 --tradition oneeuro
 ```
 
 Note that the pretrained checkpoints and testing datasets should be downloaded and prepared before evaluation.

@@ -2,14 +2,15 @@
 # Description: For smoothnet train, eval, debug, time
 # h36m_hrnet_2D h36m_cpn_2D h36m_hourglass_2D h36m_fcn_3D pw3d_pare_3D pw3d_tcmr_3D aist_spin_smpl aist_vibe_smpl aist_vibe_3D h36m_videoposet27_3D h36m_ppt_3D mpiinf3dhp_spin_3D mupots_tposenet_3D jhmdb_simplepose_2D mpiinf3dhp_tcmr_3D mocap_noise_3D
 #!/bin/bash
-export CUDA_VISIBLE_DEVICES=7
+export CUDA_VISIBLE_DEVICES=6
 IFS='_'
 windows=8
 # datadir=mocap_noise_3D
 # datadir=aist_vibe_3D
 # datadir=nh36m_fcns_3D
-datadir=mh36m_fcn_3D
-# datadir=aist_spin_smpl
+# datadir=mh36m_fcn_3D
+# datadir=h36m_fcn_3D
+datadir=aist_spin_smpl
 # datadir=h36m_hourglass_2D
 
 # datadir=aist_vibe_3D
@@ -33,7 +34,7 @@ represent=${exp[3]}
 # represent=3D,3D
 # tradition=oneeuro
 # # tradition=gaus1d
-# tradition=savgol
+tradition=savgol
 # # windows=${exp[4]}
 IFS=' '
 
@@ -41,7 +42,7 @@ gopy="python"
 status0="working..."
 
 cont="train_smoothnet.py \
-    --cfg /root/mnt/SynSP/configs/cvpr/mh36m_fcn_3D.yaml \
+    --cfg configs/aist_spin_smpl.yaml \
     --dataset_name $dataset \
     --estimator $method \
     --body_representation $represent \
@@ -65,8 +66,8 @@ do
             ;;
         "e")
             cont="eval_smoothnet.py \
-                --cfg configs/cvpr/aist_spin_smpl.yaml \
-                --checkpoint /root/mnt/results/pw3d_aist_spin_smpl_8_26-07-2023_13-44-00!/39_checkpoint.pth.tar \
+                --cfg configs/aist_spin_smpl.yaml \
+                --checkpoint /mnt/new_disk2/wangtao/SynSP/results/cvpr_h36m_fcn_3D_8_10-04-2025_02-42-58/18_checkpoint.pth.tar \
                 --dataset_name $dataset \
                 --estimator $method \
                 --body_representation $represent \

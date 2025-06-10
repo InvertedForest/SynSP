@@ -171,8 +171,7 @@ def calculate_jhmdb_PCK(predicted, gt, bbox, imgshape, thresh):
 def evaluate_smoothnet_2D(model,
                           test_dataloader,
                           device,
-                          cfg,dataset,
-                          flg,
+                          cfg,flg,dataset,
                           show_detail=True):
     keypoint_number = test_dataloader.dataset.input_dimension//2
 
