@@ -67,7 +67,7 @@ do
         "e")
             cont="eval_smoothnet.py \
                 --cfg configs/aist_spin_smpl.yaml \
-                --checkpoint /mnt/new_disk2/wangtao/SynSP/results/cvpr_h36m_fcn_3D_8_10-04-2025_02-42-58/18_checkpoint.pth.tar \
+                --checkpoint /mnt/new_disk/wangtao/git/SynSP/results/cvpr_aist_spin_smpl_8_10-06-2025_08-24-20/60_checkpoint.pth.tar \
                 --dataset_name $dataset \
                 --estimator $method \
                 --body_representation $represent \

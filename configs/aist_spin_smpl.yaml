@@ -20,8 +20,8 @@ MODEL :
   d_word_vec: 256
   d_model: 256
   d_inner: 256
-  n_layers: 4
-  n_head: 4
+  n_layers: 5
+  n_head: 5
   d_k: 64
   d_v: 64
   persons: 1
